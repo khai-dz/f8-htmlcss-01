@@ -19,10 +19,22 @@ a {
     text-decoration: none;
 }
 
-.header {
+.hero-wrap {
     background-color: #e6f0ff;
-    height: 736px;
+    height: calc(736px - 90px);
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+    background-color: #e6f0ff;
+    position: sticky;
+    z-index: 1;
+    top: -26px;
 }
 
 .content {
@@ -31,10 +43,11 @@ a {
     margin-right: auto;
 }
 
-.content .navbar {
+.navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
+    width: 1110px;
 }
 
 .actions {
